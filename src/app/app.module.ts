@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule} from '@angular/common/http';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,6 +16,8 @@ import { FuncionariosPageComponent } from './pages/cadastros/funcionarios-page/f
 import { FramePageComponent } from './pages/master/frame.page';
 import { AgendaPageComponent } from './pages/diversas/agenda-page/agenda-page.component';
 import { InfoPageComponent } from './pages/diversas/info-page/info-page.component';
+import { LoadingComponent } from './components/shared/loading/loading.component';
+
 
 @NgModule({
   declarations: [
@@ -31,13 +32,13 @@ import { InfoPageComponent } from './pages/diversas/info-page/info-page.componen
     FuncionariosPageComponent,
     FramePageComponent,
     AgendaPageComponent,
-    InfoPageComponent
+    InfoPageComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule,
     ReactiveFormsModule
   ],
   providers: [],
